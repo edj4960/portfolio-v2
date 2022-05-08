@@ -1,22 +1,21 @@
 import React from 'react';
 import Home from './components/sections/Home';
 import About from './components/sections/About';
-import SideBar from './components/SideBar';
-import './App.scss';
+import NavDisplay from './components/NavDisplay';
 import ScrollHandler from './components/ScrollHandler';
 import { SectionProvider } from './contexts/SectionContext';
-import { Element } from 'react-scroll';
+import './styles.scss';
 
 const  App = () => {
   return (
     <div id="app">
       <SectionProvider>
         <ScrollHandler>
-          <SideBar />
-          <Element id="sections-container" name="sections-container">
+          <NavDisplay />
+          <div id="sections-container">
             <Home />
             <About/>
-          </Element>
+          </div>
         </ScrollHandler>
       </SectionProvider>
     </div>

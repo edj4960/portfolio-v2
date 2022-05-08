@@ -1,0 +1,51 @@
+@import 'src/variables';
+
+$CIRCLE_WIDTH: 1.5rem;
+
+// SIDE BAR
+#side_bar {
+  position: fixed;
+  left: 20px;
+  top: 50%;
+  transform: translate(0,-50%);
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.link-circle {
+  height: $CIRCLE_WIDTH;
+  width: $CIRCLE_WIDTH;
+  border-radius: 100%;
+  border: 4px solid $PRIMARY;
+}
+
+.section-link.active > .link-circle {
+  background-color: $PRIMARY;
+}
+
+// NAV BAR
+#nav_bar {
+  position: fixed;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+
+  .nav-link {
+    color: $LIGHT;
+    font-family: $FONT-2;
+    font-size: $FONT-S;
+    cursor: pointer;
+    
+    &.svg-inline--fa {
+      font-size: $FONT-M;
+      padding: .5rem;
+    }
+
+    &.active,
+    &:hover {
+      color: $PRIMARY
+    }
+  }
+}
