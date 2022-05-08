@@ -6,7 +6,7 @@ import './Home.scss';
 const Home = () => {
 
   return (
-    <Element name={HOME_SECTION.name} className="section">
+    <Element name={HOME_SECTION.name} id="home-section" className="section">
       <div className='vertical-center ml-5'>
         <h1 className='txt-light'>Evan Jones</h1>
         <h1 className='txt-primary'>Web Developer</h1>

@@ -1,0 +1,20 @@
+@import 'src/variables';
+
+#about-section {
+  background-color: $GREY;
+  h1 {
+    margin-bottom: 8rem;
+  }
+  h2 {
+    margin-bottom: 2rem;
+  }
+}
+
+#about-container {
+  height: 100%;
+  max-width: 48rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}

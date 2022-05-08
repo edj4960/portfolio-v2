@@ -23,21 +23,38 @@ h1 {
   font-size: $FONT-XL;
   margin: 0;
   font-weight: bold;
-  &.txt-light {
-    text-shadow: 10px 10px rgba($LIGHT, $TITLE-OPACITY);
-  }
   &.txt-primary {
     text-shadow: 10px 10px rgba($PRIMARY, $TITLE-OPACITY);
   }
+  &.txt-light {
+    text-shadow: 10px 10px rgba($LIGHT, $TITLE-OPACITY);
+  }
+  &.txt-dark {
+    text-shadow: 10px 10px rgba($DARK, $TITLE-OPACITY);
+  }
 }
 
-.txt-light {
-  color: $LIGHT;
+h2 {
+  font-family: $FONT-2;
+  font-size: $FONT-L;
+  font-weight: bold;
+}
+
+p {
+  font-size: $FONT-S;
+  font-family: $FONT-1;
 }
 
 .txt-primary {
   color: $PRIMARY;
 }
+.txt-light {
+  color: $LIGHT;
+}
+.txt-dark {
+  color: $DARK;
+}
+
 
 .vertical-center {
   margin: 0;
