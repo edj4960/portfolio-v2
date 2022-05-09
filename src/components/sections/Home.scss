@@ -1,5 +1,19 @@
 @import 'src/variables';
 
-#home-section {
+#home_section {
   background-color: $DARK;
+  padding-left: 10rem;
+  
+  .txt-primary {
+    text-shadow: 10px 10px #144146;
+  }
+  
+  .txt-light {
+    text-shadow: 10px 10px #33414D;
+  }
+}
+
+#wave_lines {
+  position: absolute;
+  float: left;
 }

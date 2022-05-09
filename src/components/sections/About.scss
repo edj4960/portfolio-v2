@@ -1,7 +1,8 @@
 @import 'src/variables';
 
 #about-section {
-  background-color: $GREY;
+  background-color: lighten($SECONDARY, 5%);
+  padding-left: 10rem;
   h1 {
     margin-bottom: 8rem;
   }

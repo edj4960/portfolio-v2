@@ -9,9 +9,9 @@ const About = () => {
   return (
     <Element name={ABOUT_SECTION.name} id='about-section' className="section">
       <div id="about-container" className='ml-5'>
-        <h1 className='txt-dark'>ABOUT</h1>
-        <h2 className='txt-dark'>Hello</h2>
-        <p>
+        <h1 className='txt-light'>ABOUT</h1>
+        <h3 className='txt-light'>Hello</h3>
+        <p className='txt-light'>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
           incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
           exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute

@@ -15,6 +15,7 @@ $CIRCLE_WIDTH: 1.5rem;
 }
 
 .link-circle {
+  cursor: pointer;
   height: $CIRCLE_WIDTH;
   width: $CIRCLE_WIDTH;
   border-radius: 100%;

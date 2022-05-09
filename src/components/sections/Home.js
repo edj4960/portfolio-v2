@@ -3,10 +3,17 @@ import Element from 'react-scroll/modules/components/Element';
 import { HOME_SECTION } from '../../Constants';
 import './Home.scss';
 
+import WaveLines from '../../assets/wave-lines.svg';
+
 const Home = () => {
 
   return (
-    <Element name={HOME_SECTION.name} id="home-section" className="section">
+    <Element
+      name={HOME_SECTION.name}
+      className="section"
+      id="home_section"
+      style={{ backgroundImage: `url(${WaveLines})` }}
+    >
       <div className='vertical-center ml-5'>
         <h1 className='txt-light'>Evan Jones</h1>
         <h1 className='txt-primary'>Web Developer</h1>
