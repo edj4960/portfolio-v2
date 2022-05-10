@@ -1,6 +1,6 @@
 import React from 'react';
 import Element from 'react-scroll/modules/components/Element';
-import { WORK_SECTION, FEATURED_WORK } from '../../Constants';
+import { WORK_PAGE, FEATURED_WORK } from '../../Constants';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 
@@ -13,7 +13,7 @@ import { openUrl } from '../../util';
 const Work = () => {
 
   return (
-    <Element name={WORK_SECTION.name} id='work-section' className="section txt-light">
+    <Element name={WORK_PAGE.name} id='work-page' className="page txt-light">
       <div id="left_side">
         <Carousel
           axis='vertical'

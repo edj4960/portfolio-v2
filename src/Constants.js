@@ -1,22 +1,22 @@
 
-export const HOME_SECTION = {
+export const HOME_PAGE = {
   name: 'home',
   title: 'Home'
 };
-export const ABOUT_SECTION = {
+export const ABOUT_PAGE = {
   name: 'about',
   title: 'About'
 };
-export const WORK_SECTION = {
+export const WORK_PAGE = {
   name: 'work',
   title: 'Work'
 };
-export const CONTACT_SECTION = {
+export const CONTACT_PAGE = {
   name: 'contact',
   title: 'Contact'
 };
 
-export const SECTIONS = [HOME_SECTION, ABOUT_SECTION, WORK_SECTION, CONTACT_SECTION]
+export const PAGES = [HOME_PAGE, ABOUT_PAGE, WORK_PAGE, CONTACT_PAGE]
 
 
 export const FEATURED_WORK = [

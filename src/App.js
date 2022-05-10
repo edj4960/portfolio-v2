@@ -1,25 +1,27 @@
 import React from 'react';
-import Home from './components/sections/Home';
-import About from './components/sections/About';
-import Work from './components/sections/Work';
+import Home from './components/pages/Home';
+import About from './components/pages/About';
+import Work from './components/pages/Work';
 import NavDisplay from './components/NavDisplay';
+import Contact from './components/pages/Contact';
 import ScrollHandler from './components/ScrollHandler';
-import { SectionProvider } from './contexts/SectionContext';
+import { PageProvider } from './contexts/PageContext';
 import './styles.scss';
 
 const  App = () => {
   return (
     <div id="app">
-      <SectionProvider>
+      <PageProvider>
         <ScrollHandler>
           <NavDisplay />
-          <div id="sections-container">
+          <div id="pages-container">
             <Home />
             <About />
             <Work />
+            <Contact />
           </div>
         </ScrollHandler>
-      </SectionProvider>
+      </PageProvider>
     </div>
   );
 }

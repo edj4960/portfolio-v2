@@ -1,6 +1,6 @@
 import React from 'react';
 import Element from 'react-scroll/modules/components/Element';
-import { ABOUT_SECTION } from '../../Constants';
+import { ABOUT_PAGE } from '../../Constants';
 import laptop from '../../assets/laptop.svg';
 
 import './About.scss';
@@ -8,7 +8,7 @@ import './About.scss';
 const About = () => {
 
   return (
-    <Element name={ABOUT_SECTION.name} id='about-section' className="section">
+    <Element name={ABOUT_PAGE.name} id='about-page' className="page">
       <div id="about-container" className='ml-5'>
         <h1 className='txt-light'>
           ABOUT

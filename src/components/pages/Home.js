@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Element from 'react-scroll/modules/components/Element';
-import { HOME_SECTION } from '../../Constants';
+import { HOME_PAGE } from '../../Constants';
 import TextTransition, { presets } from 'react-text-transition';
 
 import WaveLines from '../../assets/wave-lines.svg';
@@ -24,9 +24,9 @@ const Home = () => {
 
   return (
     <Element
-      name={HOME_SECTION.name}
-      className="section"
-      id="home_section"
+      name={HOME_PAGE.name}
+      className="page"
+      id="home_page"
       style={{ backgroundImage: `url(${WaveLines})` }}
     >
       <div className='vertical-center ml-5'>

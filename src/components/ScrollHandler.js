@@ -1,8 +1,8 @@
 import React, { useContext, useEffect, useState } from 'react';
-import { SectionContext } from '../contexts/SectionContext';
+import { PageContext } from '../contexts/PageContext';
 
 const ScrollHandler = (props) => {
-  const { setSection } = useContext(SectionContext);
+  const { setPage } = useContext(PageContext);
 
   const [startX, setStartX] = useState(0);
   const [startY, setStartY] = useState(0);
@@ -11,7 +11,7 @@ const ScrollHandler = (props) => {
   const threshold = 150;
 
   const onMove = (moveDown) => {
-    setSection(moveDown);
+    setPage(moveDown);
   }
 
   useEffect(() => {
@@ -27,7 +27,6 @@ const ScrollHandler = (props) => {
   // Arrow Keys
   // TODO: Figure out why not working
   const onKeyDown = (e) => {
-    console.log(e);
     if (e.keyCode === 38) {
       // Up key
       onMove(false);

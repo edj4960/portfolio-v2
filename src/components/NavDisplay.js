@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-scroll';
-import { SECTIONS } from '../Constants';
-import { SectionContext } from '../contexts/SectionContext';
+import { PAGES } from '../Constants';
+import { PageContext } from '../contexts/PageContext';
 import { openUrl } from '../util';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -10,24 +10,24 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import './NavDisplay.scss';
 
 const NavDisplay = () => {
-  const { setSection } = useContext(SectionContext);  
+  const { setPage } = useContext(PageContext);  
 
   const handleSetActive = (secName) => {
-    const secIdx = SECTIONS.findIndex(sec => sec.name === secName);
-    setSection(secIdx);
+    const secIdx = PAGES.findIndex(sec => sec.name === secName);
+    setPage(secIdx);
   }
 
   return (
     <>
       <div id='side_bar'>
         {
-          SECTIONS.map((section) => {
+          PAGES.map((page) => {
             return (
               <Link
-                id={`link-${section.name}`}
+                id={`link-${page.name}`}
                 activeClass='active'
-                key={section.name}
-                to={section.name}
+                key={page.name}
+                to={page.name}
                 onSetActive={handleSetActive}
                 spy={true}
                 className='section-link'
@@ -43,18 +43,18 @@ const NavDisplay = () => {
 
       <div id='nav_bar' className='mr-5'>
         {
-          SECTIONS.map((section) => {
+          PAGES.map((page) => {
             return (
               <Link
-                id={`link-${section.name}`}
+                id={`link-${page.name}`}
                 activeClass='active'
-                key={section.name}
-                to={section.name}
+                key={page.name}
+                to={page.name}
                 onSetActive={handleSetActive}
                 spy={true}
                 className='nav-link'
               >
-                {section.title}
+                {page.title}
               </Link>
             )
           })
