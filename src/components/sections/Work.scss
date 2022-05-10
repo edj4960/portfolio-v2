@@ -10,10 +10,9 @@
   height: 100%;
   float: left;
   display: flex;
-  justify-content: center;
+  justify-content: right;
   align-items: center;
-  padding-left: 5rem;
-  padding-right: 2rem;
+  padding-right: 4rem;
 }
 
 #right_side {
@@ -24,7 +23,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 2rem;
+  padding: 0 4rem;
   h1 {
     margin-bottom: 2rem;
   }
@@ -35,8 +34,12 @@
   p {
     font-size: $FONT-M;
     font-weight: bold;
-    margin-top: 10rem;
+    margin-top: 5rem;
   }
+}
+
+.carousel-root {
+  width: 540px;
 }
 
 .carousel-btn {

@@ -69,7 +69,7 @@ const Work = () => {
         </Carousel>
       </div>
       <div id="right_side">
-        <h1 className="txt-light">WORK</h1>
+        <h1 className="txt-primary">WORK</h1>
         <h3>Take a look at my featured work</h3>
         <p className='txt-grey'>Want to see more?</p>
         <div id="btn-container">

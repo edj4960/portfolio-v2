@@ -11,6 +11,10 @@
   .txt-light {
     text-shadow: 10px 10px #33414D;
   }
+
+  .animate {
+    transition: transform 1s, opacity 1s;
+  }
 }
 
 #wave_lines {

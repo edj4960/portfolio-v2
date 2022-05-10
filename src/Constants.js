@@ -32,7 +32,7 @@ export const FEATURED_WORK = [
     description: 'A subscription service similar to audible. Users obtain tokens every month that can be used for purchasing audio books.',
     imgFile: 'storier-web-img.png',
     url: 'https://apps.apple.com/us/app/storier-audio-for-kids/id1585050099?platform=iphone',
-    skills: ['React Native', 'React', 'Firebase', 'Algolia', 'Stripe']
+    skills: ['React/React Native', 'Firebase', 'Algolia', 'Stripe']
   },
   {
     title: 'Muffin - Grocery App',
@@ -40,5 +40,12 @@ export const FEATURED_WORK = [
     imgFile: 'storier-web-img.png',
     url: 'https://apps.apple.com/us/app/storier-audio-for-kids/id1585050099?platform=iphone',
     skills: ['React Native', 'Firebase']
+  },
+  {
+    title: 'Portfolio (This Site)',
+    description: 'Wanting to make a simple and beautiful portfolio I created a custom scroll mechanic similar to that of fullPage.js.',
+    imgFile: 'storier-web-img.png',
+    url: 'https://apps.apple.com/us/app/storier-audio-for-kids/id1585050099?platform=iphone',
+    skills: ['React', 'Firebase Hosting']
   }
 ]
