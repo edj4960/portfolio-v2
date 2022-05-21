@@ -16,6 +16,11 @@
     font-weight: bold;
     margin: 0;
   }
+  .error {
+    color: $RED;
+    font-family: $FONT-2;
+    margin-top: 5px;
+  }
 }
 
 #contact_form {

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Element from 'react-scroll/modules/components/Element';
 import { HOME_PAGE } from '../../Constants';
-import TextTransition, { presets } from 'react-text-transition';
+import TextAnimation from '../../animations/TextAnimation';
 
 import WaveLines from '../../assets/wave-lines.svg';
 import './Home.scss';
@@ -19,7 +19,9 @@ const Home = () => {
   }, [])
 
   const TEXTS = [
-    'Web Developer'
+    'Web',
+    'App',
+    'IOT'
   ]
 
   return (
@@ -31,11 +33,18 @@ const Home = () => {
     >
       <div className='vertical-center ml-5'>
         <h1 className='txt-light'>Evan Jones</h1>
-        <h1 className='txt-primary animate' style={{width: '1000px'}}>
-          <TextTransition
-            text={TEXTS[textIdx % TEXTS.length]}
-            springConfig={presets.slow}
-            direction={'down'}
+        <h1 className='txt-primary animate d-flex' style={{width: '1000px'}}>
+          <TextAnimation
+            textArray={TEXTS}
+            index={textIdx}
+            animateFirst={true}
+            style={{ width: 244}}
+          />
+          {" "}
+          <TextAnimation
+            textArray={['Developer']}
+            index={0}
+            animateFirst={true}
           />
         </h1>
       </div>

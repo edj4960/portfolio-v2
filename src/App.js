@@ -8,7 +8,7 @@ import ScrollHandler from './components/ScrollHandler';
 import { PageProvider } from './contexts/PageContext';
 import './styles.scss';
 
-const  App = () => {
+const App = () => {
   return (
     <div id="app">
       <PageProvider>

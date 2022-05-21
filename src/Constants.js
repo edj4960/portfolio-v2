@@ -1,3 +1,4 @@
+export const EMAIL_JS_TEMPLATE_ID = 'template_gxTuSbwt';
 
 export const HOME_PAGE = {
   name: 'home',
