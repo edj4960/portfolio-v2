@@ -8,6 +8,8 @@ const TextAnimation = ({
   useDelay = true,
   delayIncrement = .1,
   animateFirst = false,
+  animationDuration = 1,
+  animateExit = false,
   updateDelay = 0,
   style
 }) => {
@@ -58,8 +60,14 @@ const TextAnimation = ({
       {splitText.map((item, index) => (
         <span
           key={index}
-          className={isSame(item, index) ? '' : 'anim-span'}
-          style={{animationDelay: !isSame(item, index) ? getDelay() : '0s'}}
+          className={
+            `${isSame(item, index) ? '' : 'anim-span'}
+            ${animateExit ? 'anim-exit' : ''}`
+          }
+          style={{
+            animationDelay: !isSame(item, index) ? getDelay() : '0s',
+            animationDuration: `${animationDuration}s`
+          }}
         >
           {item}
         </span>

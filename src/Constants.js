@@ -19,7 +19,6 @@ export const CONTACT_PAGE = {
 
 export const PAGES = [HOME_PAGE, ABOUT_PAGE, WORK_PAGE, CONTACT_PAGE]
 
-
 export const FEATURED_WORK = [
   {
     title: 'Storier Front Page',
@@ -31,21 +30,21 @@ export const FEATURED_WORK = [
   {
     title: 'Token Subscription Service',
     description: 'A subscription service similar to audible. Users obtain tokens every month that can be used for purchasing audio books.',
-    imgFile: 'storier-web-img.png',
+    imgFile: 'tokens-subscription.png',
     url: 'https://apps.apple.com/us/app/storier-audio-for-kids/id1585050099?platform=iphone',
     skills: ['React/React Native', 'Firebase', 'Algolia', 'Stripe']
   },
   {
     title: 'Muffin - Grocery App',
     description: 'A personal project still in development to create a simple and clean grocery app.',
-    imgFile: 'storier-web-img.png',
-    url: 'https://apps.apple.com/us/app/storier-audio-for-kids/id1585050099?platform=iphone',
+    imgFile: 'muffin.png',
+    url: 'https://github.com/edj4960/Rabbit',
     skills: ['React Native', 'Firebase']
   },
   {
     title: 'Portfolio (This Site)',
-    description: 'Wanting to make a simple and beautiful portfolio I created a custom scroll mechanic similar to that of fullPage.js.',
-    imgFile: 'storier-web-img.png',
+    description: 'Wanting to make a simple and beautiful portfolio I created a custom scroll mechanic similar to that of fullPage.js as well as a custom text animator.',
+    imgFile: 'portfolio.png',
     url: 'https://apps.apple.com/us/app/storier-audio-for-kids/id1585050099?platform=iphone',
     skills: ['React', 'Firebase Hosting']
   }

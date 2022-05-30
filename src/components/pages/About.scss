@@ -13,16 +13,29 @@
 
 #about-container {
   height: 100%;
-  max-width: 48rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   position: relative;
+  
+  p {
+    max-width: 48rem;
+  }
 }
 
 #laptop {
-  right: -45rem;
+  right: 10%;
   top: 10rem;
   position: absolute;
   width: 35rem;
+
+  @media (max-width: 1800px) {
+    width: 25rem;
+    top: 5rem;
+  }
+
+  @media (max-width: 1400px) {
+    width: 18rem;
+    top: 5rem;
+  }
 }

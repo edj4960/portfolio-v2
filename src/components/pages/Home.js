@@ -8,12 +8,13 @@ import './Home.scss';
 
 const Home = () => {
   const [textIdx, setTxtIdx] = useState(0);
+  const duration = 4;
 
   useEffect(() => {
     const intervalId = setInterval(() => {
         setTxtIdx(index => index + 1)
       },
-      3000
+      duration * 1000
     );
     return () => clearTimeout(intervalId);
   }, [])
@@ -32,18 +33,24 @@ const Home = () => {
       style={{ backgroundImage: `url(${WaveLines})` }}
     >
       <div className='vertical-center ml-5'>
-        <h1 className='txt-light'>Evan Jones</h1>
+        <h1 className='txt-light'>
+          <TextAnimation
+            textArray={['Evan Jones']}
+            animateFirst={true}
+          />
+        </h1>
         <h1 className='txt-primary animate d-flex' style={{width: '1000px'}}>
           <TextAnimation
             textArray={TEXTS}
             index={textIdx}
             animateFirst={true}
-            style={{ width: 244}}
+            animateExit={true}
+            animationDuration={duration}
+            style={{ width: 244 }}
           />
           {" "}
           <TextAnimation
             textArray={['Developer']}
-            index={0}
             animateFirst={true}
           />
         </h1>

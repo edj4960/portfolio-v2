@@ -59,7 +59,7 @@ const Work = () => {
                     className="work-entry-img"
                     onClick={() => {openUrl(entry.url)}}
                   >
-                    <img src={require(`../../assets/${entry.imgFile}`)} />
+                    <img src={require(`../../assets/${entry.imgFile}`)} alt="Work Example" />
                   </div>
                   <p>{entry.description}</p>
                 </div>
