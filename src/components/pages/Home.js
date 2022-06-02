@@ -32,7 +32,7 @@ const Home = () => {
       id="home_page"
       style={{ backgroundImage: `url(${WaveLines})` }}
     >
-      <div className='vertical-center ml-5'>
+      <div className='vertical-center'>
         <h1 className='txt-light'>
           <TextAnimation
             textArray={['Evan Jones']}
@@ -46,7 +46,8 @@ const Home = () => {
             animateFirst={true}
             animateExit={true}
             animationDuration={duration}
-            style={{ width: 244 }}
+            className={'dev-text-anim'}
+            style={{  }}
           />
           {" "}
           <TextAnimation

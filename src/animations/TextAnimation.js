@@ -11,7 +11,8 @@ const TextAnimation = ({
   animationDuration = 1,
   animateExit = false,
   updateDelay = 0,
-  style
+  style,
+  className = ''
 }) => {
   let len = textArray.length;
   let safeIndex = (index % len + len) % len
@@ -56,7 +57,7 @@ const TextAnimation = ({
   }
 
   return (
-    <span style={style} className={animate ? 'anim-wrapper' : ''}>
+    <span style={style} className={`${className} ${animate ? 'anim-wrapper' : ''}`}>
       {splitText.map((item, index) => (
         <span
           key={index}

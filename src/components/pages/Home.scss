@@ -15,6 +15,31 @@
   .animate {
     transition: transform 1s, opacity 1s;
   }
+
+  .dev-text-anim {
+    width: 244px
+  }
+
+  @media (max-width: 1000px) {
+    h1 {
+      font-size: 110px;
+    }
+    .dev-text-anim {
+      width: 210px;
+    }
+  }
+
+  @media (max-width: 750px) {
+    padding-left: 5rem;
+
+    h1 {
+      font-size: 80px;
+    }
+
+    .dev-text-anim {
+      width: 160px;
+    }
+  }
 }
 
 #wave_lines {

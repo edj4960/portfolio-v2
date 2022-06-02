@@ -21,6 +21,28 @@
     font-family: $FONT-2;
     margin-top: 5px;
   }
+
+  @media (max-width: 1400px) {
+    h1 {
+      font-size: 100px;
+    }
+    h2 {
+      font-size: $FONT-M;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    flex-direction: column;
+    gap: 3rem;
+
+    #title_div {
+      width: 500px;
+    }
+
+    #contact_form {
+      margin-left: 0;
+    }
+  }
 }
 
 #contact_form {

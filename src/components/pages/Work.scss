@@ -1,9 +1,5 @@
 @import 'src/variables';
 
-#work-container {
-  display: flex;
-}
-
 #left_side {
   background-color: $SECONDARY;
   width: 50%;
@@ -31,10 +27,50 @@
     width: 32rem;
     line-height: 1;
   }
-  p {
+  > p {
     font-size: $FONT-M;
     font-weight: bold;
     margin-top: 5rem;
+  }
+  .carousel-root {
+    display: none;
+  }
+}
+
+@media (max-width: 1400px) {
+  #left_side {
+    display: none;
+  }
+
+  #right_side {
+    float: none;
+    width: 100%;
+    padding: 0 10rem 0 10rem;
+
+    h1 {
+      margin-bottom: 0;
+      font-size: 100px;
+    }
+    > p {
+      margin-top: 0;
+    }
+    h3 {
+      display: none;
+    }
+    .carousel-root {
+      display: inherit;
+      float: right;
+
+      @media (max-width: 750px) {
+        width: auto;
+      }
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  #right_side {
+    padding: 0 2rem 0 2rem;
   }
 }
 
@@ -58,7 +94,7 @@
 .carousel-entry {
   text-align: right;
   padding: 10px 0;
-  height: 500px;
+  height: 450px;
   display: flex;
   flex-direction: column;
   justify-content: center;

@@ -49,7 +49,7 @@ const Contact = () => {
     <Element name={CONTACT_PAGE.name} id='contact-page' className='page txt-light'>
       <div id="title_div">
         <h1 className='txt-light'>CONTACT</h1>
-        <h2 className='txt-grey mb-5'>Let's build something amazing</h2>
+        <h2 className='txt-grey'>Let's build something amazing</h2>
         <p>evan.jd@outlook.com</p>
       </div>
       <div id="contact_form">

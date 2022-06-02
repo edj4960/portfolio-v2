@@ -9,10 +9,17 @@ const About = () => {
 
   return (
     <Element name={ABOUT_PAGE.name} id='about-page' className="page">
-      <div id="about-container" className='ml-5'>
-        <h1 className='txt-light'>
-          ABOUT
-        </h1>
+      <div id="about-container">
+        <div id='about-hdr'>
+          <img
+            src={laptop}
+            alt="Laptop Illustration"
+            id="laptop"
+          />
+          <h1 className='txt-light'>
+            ABOUT
+          </h1>
+        </div>
         <h3 className='txt-grey'>Hello,</h3>
         <p className='txt-light'>
           My name is Evan. I am a passionate developer who consistently produces exceptional
@@ -21,11 +28,10 @@ const About = () => {
           services that are both user friendly and beautiful while ensuring high coding standards are maintained. 
           No matter the challenge I am always excited to learn something new and build fantastic solutions.
         </p>
-        <img
+        {/* <img
           src={laptop}
           alt="Laptop Illustration"
-          id="laptop"
-        />
+        /> */}
       </div>
     </Element>
   )
