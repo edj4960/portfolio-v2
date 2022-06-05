@@ -26,7 +26,7 @@ const About = () => {
           digital experiences for both <strong>Web</strong> and <strong>Mobile</strong> platforms.
           Since I started learning development over 4 years ago I have constantly worked to create
           services that are both user friendly and beautiful while ensuring high coding standards are maintained. 
-          No matter the challenge I am always excited to learn something new and build fantastic solutions.
+          No matter the challenge I am always excited to learn new things and build fantastic solutions.
         </p>
         {/* <img
           src={laptop}

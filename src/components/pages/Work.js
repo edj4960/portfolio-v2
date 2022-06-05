@@ -1,10 +1,11 @@
 import React from 'react';
 import Element from 'react-scroll/modules/components/Element';
 import { WORK_PAGE } from '../../Constants';
-
-import './Work.scss';
 import { openUrl } from '../../util';
 import FeaturedWorkCarousel from '../FeaturedWorkCarousel';
+import { Link } from 'react-router-dom';
+
+import './Work.scss';
 
 const Work = () => {
 
@@ -19,9 +20,9 @@ const Work = () => {
         <FeaturedWorkCarousel />
         <p className='txt-grey'>Want to see more?</p>
         <div id="btn-container">
-          <button onClick={() => {}}>
+          <Link className='button' to='archive'>
             ARCHIVE
-          </button>
+          </Link>
           <button onClick={() => { openUrl('https://github.com/edj4960?tab=repositories')}}>
             GITHUB
           </button>

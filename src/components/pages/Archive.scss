@@ -1,0 +1,59 @@
+@import 'src/variables';
+
+body {
+  background-color: $DARK;
+
+}
+
+#archive-page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 5rem 1rem 0 1rem;
+}
+
+table {
+  font-family: $FONT-1;
+  font-size: $FONT-XS;
+  margin-top: 3rem;
+  border-spacing: 350px;
+  font-weight: bold;
+  cursor: default;
+}
+
+thead {
+  color: $PRIMARY;
+  font-size: 18px;
+}
+
+tbody {
+  color: $LIGHT;
+  tr {
+    border-radius: 10px;
+    &:hover {
+      background-color: lighten($DARK, 5%);
+    }
+  }
+}
+
+th, td {
+  padding: 10px 25px;
+}
+
+.built-with-entry {
+  color: $GREY;
+  font-size: 14px;
+}
+
+.links-entry {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  svg {
+    cursor: pointer;
+    transition: color .75s;
+    &:hover {
+      color: $PRIMARY;
+    }
+  }
+}

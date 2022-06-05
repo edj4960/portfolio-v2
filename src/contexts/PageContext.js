@@ -1,4 +1,5 @@
-import { createContext, useState } from "react";
+import { createContext, useEffect, useState } from "react";
+import { useSearchParams } from "react-router-dom";
 import { scroller } from "react-scroll";
 import { PAGES } from "../Constants";
 
@@ -9,6 +10,18 @@ const PageContext = createContext({
 
 const PageProvider = props => {
   const [page, setCurPage] = useState(0);
+  let [searchParams, setSearchParams] = useSearchParams();
+
+  useEffect(() => {
+    const page = searchParams.get('page');
+    console.log(page);
+
+    if (page) {
+      scroller.scrollTo(page);
+      searchParams.delete('page');
+      setSearchParams(searchParams);
+    }
+  }, [searchParams, setSearchParams]);
 
   const setPage = (secMove) => {    
     if (Number.isInteger(secMove)) {
